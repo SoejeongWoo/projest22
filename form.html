@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Form.html</h2>
+<style>
+    body { background-color: Pink; }
+    h1 { background-color: rgb(255,128,0); }
+    p { background-color: #FCCDE5; }
+</style>
+
+
+<form action="test_ok.php" method="post">
+이름 : <input type ="text" name: "username"><br>
+학번 : <input type ="password"><br>
+나이 : <input type ="number"><br>
+파일 : <input type ="file"><br> 
+성별 : <input type ="radio" name: "gender">여자<input type ="radio" name: "gender">남자<br> 
+연령대 : <input type ="checkbox" name: "istype">10대<input type ="checkbox" name: "istype">20대<input type ="checkbox" name: "istype">30대<input type ="checkbox" name: "istype">40대
+<select>
+    <option value="americano">재학생</option>
+    <option value="caffe latte">휴학생</option>
+    <option value="cafe au lait">대학원생</option>
+    <option value="espresso">교수</option>
+</select><br>
+<label for="start">졸업예정일:</label>
+
+<input type="date" id="start" name="trip-start" value="2023-09-23" min="2023-12-15" max="2035-12-31" /><br>
+
+
+
+간단한 자기소개:
+<form action="간단한 자기소개" method="get">
+    <textarea name="opinion" cols="30" rows="5"></textarea><br>
+</form>
+
+
+
+
+<input type='submit' value='제출'>
+<input type='reset' value='새로고침'>
+
+
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
