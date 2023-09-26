@@ -11,49 +11,51 @@
 
 
 <form action="test_ok.php" method="post">
-이름 : <input type ="text" name: "username"><br>
-학번 : <input type ="password"><br>
-나이 : <input type ="number"><br>
-파일 : <input type ="file"><br> 
-성별 : <input type ="radio" name: "gender">여자<input type ="radio" name: "gender">남자<br> 
-연령대 : <input type ="checkbox" name: "istype">10대<input type ="checkbox" name: "istype">20대<input type ="checkbox" name: "istype">30대
-<input type ="checkbox" name: "istype">40대
-<select>
-    <option value="americano">재학생</option>
-    <option value="caffe latte">휴학생</option>
-    <option value="cafe au lait">대학원생</option>
-    <option value="espresso">교수</option>
-</select><br>
+    이름 : <input type ="text" name: "username"><br>
+    학번 : <input type ="password"><br>
+    나이 : <input type ="number"><br>
+    파일 : <input type ="file"><br>
+    성별 : <input type ="radio" name: "gender">여자<input type ="radio" name: "gender">남자<br>
+    연령대 : <input type ="checkbox" name: "istype">10대<input type ="checkbox" name: "istype">20대<input type ="checkbox" name: "istype">30대
+    <input type ="checkbox" name: "istype">40대
+    <select>
+        <option value="americano">재학생</option>
+        <option value="caffe latte">휴학생</option>
+        <option value="cafe au lait">대학원생</option>
+        <option value="espresso">교수</option>
+    </select><br>
 
-<label for="전공">Choose a flavor:</label>
-<input list="전공 목록" id="전공 선택" name="전공" />
+    <label for="전공">Choose a flavor:</label>
+    <input list="전공 목록" id="전공 선택" name="전공" />
 
-<datalist id="전공 목록">
-  <option value="전산전자공학부"></option>
-  <option value="상담심리학부"></option>
-  <option value="경영경제학부"></option>
-  <option value="국제지역학부"></option>
-  <option value="생명과학학부"></option>
-</datalist><br>
+    <datalist id="전공 목록">
+        <option value="전산전자공학부"></option>
+        <option value="상담심리학부"></option>
+        <option value="경영경제학부"></option>
+        <option value="국제지역학부"></option>
+        <option value="생명과학학부"></option>
+    </datalist><br>
 
-<label for="start">졸업예정일:</label>
-<input type="date" id="start" name="trip-start" value="2023-09-23" min="2023-12-15" max="2035-12-31" /><br>
+    <label for="start">졸업예정일:</label>
+    <input type="date" id="start" name="trip-start" value="2023-09-23" min="2023-12-15" max="2035-12-31" /><br>
 
 
 
-<div>간단한 자기소개:</div>
-<form action="간단한 자기소개" method="get">
-    <textarea name="opinion" cols="30" rows="5"></textarea><br>
+    <div class="introduce" style="display: flex">
+        <label for="textarea">간단한 자기소개:&nbsp</label>
+        <form action="간단한 자기소개" method="get">
+            <textarea id="textarea" name="opinion" cols="30" rows="5"></textarea><br>
+        </form>
+    </div>
+
+
+
+
+
+    <input type='submit' value='제출'>
+    <input type='reset' value='새로고침'>
+
+
 </form>
-
-
-
-
-<input type='submit' value='제출'>
-<input type='reset' value='새로고침'>
-
-
-</form> 
 </body>
 </html>
-

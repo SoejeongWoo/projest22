@@ -6,7 +6,7 @@
     
     <div class="container wrapper">
       <div id="top">
-        <h1>Welcome to Seojeong Woo's Homepage</h1>
+        <h1>Welcome to Seojeong Woo(22200461)'s Homepage</h1>
         <p>Use the menu to select different Stylesheets</p>
       </div>
       <div class="wrapper">
@@ -24,8 +24,8 @@
           <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
           <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
           <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
-          <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
-          <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
+          <a>Stylesheet3</a>,
+          <a>Stylesheet4</a>.
           </p>
            <h2>No Styles</h2>
           <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
@@ -76,7 +76,6 @@
     text = document.createTextNode(document.getElementsByTagName("STYLE")[n].innerHTML);
     div.appendChild(text);
     document.body.appendChild(div);
-    //alert(document.getElementsByTagName("STYLE")[n].innerHTML);
     }
     reStyle(0);
     </script>
